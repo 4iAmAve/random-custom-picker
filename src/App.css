@@ -1,0 +1,519 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  background-color: #282c34;
+  overflow-x: hidden;
+}
+
+button {
+  border-style: solid;
+  border-color: transparent;
+}
+
+button:disabled {
+  opacity: .2;
+  pointer-events: none;
+  cursor: none;
+}
+
+input {
+  border-style: solid;
+  border: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  overflow-x: hidden;
+}
+
+.App-logo {
+}
+
+button i {
+  position: relative;
+  top: 2px;
+  font-weight: bold;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.app-header-actions {
+  position: absolute;
+  top: 20px;
+  right: 8px;
+}
+
+.app-header-actions button {
+  width: 50px;
+  height: 50px;
+  border-color: #6a1b9a;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #6a1b9a;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.app-header-actions button:focus {
+  outline-width: 0;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  line-height: 30px;
+  border-bottom: 1px solid white;
+  margin: 0 16px 8pc 16px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.content {
+
+}
+
+.content-actions {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.content-actions .input-wrapper {
+  flex: 1;
+  min-width: 350px;
+  max-width: 350px;
+  position: relative;
+  top: 8px;
+}
+
+.content--action {
+  flex: 1;
+  text-align: left;
+  margin-left: 32px;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.content--action button {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+  border-radius: 50%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-left: 16px;
+  margin-right: 16px;
+  border: none;
+}
+
+.content--action button:focus {
+  outline-width: 0;
+}
+
+.edit-panel {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.edit-mode-role {
+  position: relative;
+  flex: 1;
+  display: block;
+  padding: 8px;
+  max-width: 33%;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.input-wrapper input {
+  border-bottom: 1px solid #6b4d02;
+  width: calc(100% - 16px);
+  line-height: 28px;
+  background-color: transparent;
+  color: white;
+  margin-left: 16px;
+  font-size: 20px;
+}
+
+.input-wrapper input:focus {
+  outline-width: 0;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 4px;
+  left: 24px;
+  opacity: .7;
+  transition: all .25s ease-in-out;
+  pointer-events: none;
+}
+
+.input-wrapper label.small {
+  position: absolute;
+  top: -24px;
+  left: 8px;
+  transform: scale(.7);
+}
+
+.edit-mode-role--champs-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.edit-mode-role--champs-wrapper label {
+  opacity: .7;
+  text-align: left;
+  width: 100%;
+  position: absolute;
+  left: -5%;
+  top: 8px;
+  transform: scale(.8);
+}
+
+.edit-mode-role--input-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.edit-mode-role--champs-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.edit-mode-role--champs-wrapper label {
+  opacity: .7;
+  text-align: left;
+  width: 100%;
+  position: absolute;
+  left: -5%;
+  top: 8px;
+  transform: scale(.8);
+}
+
+.edit-mode-role--champs-wrapper textarea {
+  background-color: transparent;
+  color: white;
+  width: calc(100% - 28px);
+  height: 200px;
+  margin-left: 16px;
+  border: 1px solid #6a1b9a;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-top: 36px;
+}
+
+.edit-mode-role--champs-wrapper textarea:focus {
+  outline-width: 0;
+}
+
+.edit-mode-role input {
+  border-bottom: 1px solid #6a1b9a;
+  width: calc(100% - 16px);
+  line-height: 28px;
+  background-color: transparent;
+  color: white;
+  margin-left: 16px;
+  font-size: 20px;
+}
+
+.edit-mode-role input:focus {
+  outline-width: 0;
+}
+
+.edit-mode-role label.role-label {
+  position: absolute;
+  top: 4px;
+  left: 24px;
+  opacity: .7;
+  transition: all .25s ease-in-out;
+  pointer-events: none;
+}
+
+.edit-mode-role label.role-label.small {
+  position: absolute;
+  top: -24px;
+  left: 8px;
+  transform: scale(.7);
+}
+
+.edit-panel--action {
+  margin-left: 32px;
+}
+
+.edit-panel--action button{
+  width: 50px;
+  height: 50px;
+  border-color: #6a1b9a;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #6a1b9a;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.content--selection {
+  font-size: 24px;
+  color: white;
+  margin: 32px;
+  margin-bottom: 48px;
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  position: relative;
+}
+
+.content--selection-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.content--selection-container {
+  flex: 1;
+}
+
+.content--selection-skin-chroma-wrapper {
+  text-align: left;
+  margin: 0 32px;
+}
+
+.content--selection-skin-chroma-selector {
+  margin: 16px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.content--selection-skin-chroma-selection {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  top: -20px;
+  opacity: 0;
+  z-index: -2;
+  background: #282c34;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: opacity .25s ease-in-out, top .25s ease-in-out, z-index .25s ease-in-out;
+}
+
+.content--selection-skin-chroma-selection--open {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  top: 20px;
+  opacity: 1;
+  z-index: 10;
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.label-wrapper {
+  margin-right: 16px;
+}
+
+.selector-wrapper {
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+.selector--selection {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.selector--selection-random {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.selector--selection.selection--selected {
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+}
+
+.selector--selection:hover {
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+}
+
+.selector-wrapper img {
+  width: 75px;
+  height: 75px;
+  margin-right: 16px;
+}
+
+.champ-selection-wrapper {
+  position: relative;
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.champ-selection-wrapper img {
+  width: 75px;
+  height: 75px;
+  margin-right: 16px;
+}
+
+.champ-selection-wrapper--button {
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.content--result-re-roll {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  transform: scaleX(-1);
+  cursor: pointer;
+}
+
+.content--result-label {
+  font-weight: bold;
+}
+
+.button-upside-down i {
+  transform: rotate(180deg);
+}
+
+.bravery-input-container {
+  padding: 16px;
+  width: calc(100% - 64px);
+  margin: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+  padding-top: 32px;
+  background-color: #2e3239;
+  border-radius: 8px;
+}
+
+.content--selection-skin-chroma-selector-combination {
+  width: 400px;
+}
+
+.cta {
+  flex: 1;
+  text-align: left;
+  margin-left: 18px;
+}
+
+.cta button {
+  width: auto;
+  line-height: 30px;
+  font-size: 20px;
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.cta button i {
+  margin-right: 8px;
+}
+
+.edit-panel__selection{
+  padding: 16px;
+  width: calc(100% - 64px);
+  margin: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+  padding-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exists--information {
+  display: flex;
+}
+
+.exists--information__icon {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, rgba(2,252,91,1) 0%, rgba(24,186,92,1) 27%, rgba(7,98,45,1) 100%);
+  border-radius: 50%;
+  margin-right: 16px;
+  position: relative;
+}
+
+.exists--information__icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exists--information__text {
+  position: relative;
+  top: 8px;
+}
+
+.bravery-selection-container {
+  font-size: 24px;
+  color: white;
+  margin: 32px;
+  margin-bottom: 48px;
+  margin-top: 0;
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  position: relative;
+  background-color: #2e3239;
+}
+
+.profile-input {
+  position: relative;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

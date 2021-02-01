@@ -1,0 +1,88 @@
+.ub__container {
+  max-height: 32px;
+  transition: max-height .25s ease-in-out, min-height .25s ease-in-out;
+  overflow: hidden;
+}
+
+.ub__container__open {
+  max-height: 1000px;
+}
+
+.ub__container label {
+  font-weight: bold;
+}
+
+.ub--content {
+  margin-top: 16px;
+  text-align: left;
+  margin-right: 32px;
+}
+
+.ub--content--head {
+  margin-right: 16px;
+}
+
+.ub--content--wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.ub--content__flex {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ub__container__header {
+  width: 100%;
+  cursor: pointer;
+}
+
+.ub--content__meta {
+  margin-top: 8px;
+}
+
+.ub__champion__image {
+  margin-right: 16px;
+}
+
+.ub--content--wrapper > div {
+  padding: 8px;
+}
+
+.ub__image__padding {
+  padding: 8px;
+}
+
+.summoner-spells {
+  display: flex;
+  flex-direction: column;
+}
+
+.ub__runes {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.ub__runes img {
+  padding: 4px;
+}
+
+.ub__runes__wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.ub__image__large {
+  width: 64px;
+  height: 64px;
+}
+
+.ub__image__small {
+  width: 32px;
+  height: 32px;
+}

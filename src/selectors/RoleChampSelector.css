@@ -1,0 +1,51 @@
+.edit-panel__selection {
+  max-height: 64px;
+  transition: max-height .25s ease-in-out, min-height .25s ease-in-out;
+  border-radius: 8px;
+  background-color: #2e3239;
+}
+
+.edit-panel__selection.edit-panel__selection--open {
+  max-height: 600px;
+}
+
+.edit-panel__selection__header {
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  border-bottom: 4px solid rgba(107,77,2,1);
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.edit-panel__selection__select-container {
+  width: calc(100vw - 64px);
+  max-width: calc(100vw - 64px);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.edit-panel__selection__select-headline {
+  text-align: left;
+  border-bottom: 1px solid rgba(107, 77, 2, 1);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.edit-panel__selection__all-them-champs {
+  border-top: 1px solid rgba(89, 136, 13,1);
+  margin-top: 16px;
+  padding-top: 42px;
+}
+
+.edit-panel__selection__select-list {
+  display: flex;
+  width: calc(100vw - 64px);
+  max-width: calc(100vw - 64px);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.default-text {
+  padding: 16px;
+}

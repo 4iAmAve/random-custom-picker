@@ -1,0 +1,37 @@
+.profile-suggestion__container {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  top: 0px;
+  left: 16px;
+  opacity: 0;
+  z-index: -1;
+  background: #282c34;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  transition: opacity .25s ease-in-out,top .25s ease-in-out, z-index .25s ease-in-out;
+}
+
+.profile-suggestion__container.visible {
+  top: 32px;
+  opacity: 1;
+  z-index: 10;
+}
+
+.profile-suggestion__element {
+  cursor: pointer;
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.profile-suggestion__element:hover {
+  background: linear-gradient(90deg,#59880d,#6b4d02);
+}
+
+.profile-suggestion__element.selected {
+  background: linear-gradient(90deg,#59880d,#6b4d02);
+  pointer-events: none;
+}

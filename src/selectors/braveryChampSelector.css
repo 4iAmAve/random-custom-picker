@@ -1,0 +1,69 @@
+.bravery-panel__selection {
+  max-height: 64px;
+  transition: max-height .25s ease-in-out, min-height .25s ease-in-out;
+  border-radius: 8px;
+  background-color: #2e3239;
+}
+
+.bravery-panel__selection.edit-panel__selection--open {
+  max-height: 600px;
+}
+
+.bravery-panel__selection__header {
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  border-bottom: 4px solid rgba(82,9,121,1);
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.bravery-panel__selection__select-container {
+  width: calc(100vw - 64px);
+  max-width: calc(100vw - 64px);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.bravery-panel__selection__select-headline {
+  text-align: left;
+  border-bottom: 1px solid rgba(89,136,13,1);
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.bravery-panel__selection__all-them-champs {
+  border-top: 1px solid rgba(107,77,2,1);
+  margin-top: 16px;
+  padding-top: 42px;
+}
+
+.bravery-panel__selection__select-list {
+  display: flex;
+  width: calc(100vw - 64px);
+  max-width: calc(100vw - 64px);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.default-text {
+  padding: 16px;
+}
+
+.bravery-panel__ctas {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+.bravery-panel__ctas > div {
+  margin: 0 8px;
+}
+
+.bravery-panel__cta {
+  cursor: pointer;
+}

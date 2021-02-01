@@ -1,0 +1,7 @@
+.all-them-champs-container {
+  display: flex;
+  width: calc(100vw - 64px);
+  max-width: calc(100vw - 64px);
+  overflow: hidden;
+  overflow-x: auto;
+}

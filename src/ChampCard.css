@@ -1,0 +1,30 @@
+.champ-card__champ {
+  flex: 1;
+  font-size: 24px;
+  color: white;
+  margin-right: 16px;
+  max-width: 120px;
+}
+
+.champ-card__champ-name {
+  font-size: 24px;
+  color: white;
+  width: calc(100% - 32px);
+  min-width: calc(100% - 32px);
+  max-width: calc(100% - 32px);
+  background: linear-gradient(90deg, rgba(89,136,13,1) 0%, rgba(107,77,2,1) 100%);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin: 4px 8px 16px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.champ-card__champ-name img {
+  width: 64px;
+  height: 64px;
+}
